@@ -1,0 +1,26 @@
+import pandas as pd
+import socket
+import sqlite3
+
+customers = pd.read_csv('customer.csv')
+orders = pd.read_csv('orders.csv')
+
+orders['TotalSales'] = orders['Quantity'] * orders['Price'] 
+orders['OrderDate'] = pd.to_datetime(orders['OrderDate'])  
+
+filtered_orders = orders[orders['TotalSales'] > 1000] 
+
+result = pd.merge(filtered_orders, customers, on='CustomerID', how='left')
+
+print("Your Name:", "John Doe")
+print("IP Address:", socket.gethostbyname(socket.gethostname()))
+print("Machine Name:", socket.gethostname())
+print("\nAggregated Table:")
+print(result)
+
+
+result.to_csv('aggregated_orders.csv', index=False)
+
+conn = sqlite3.connect('output.db')
+result.to_sql('aggregated_orders', conn, if_exists='replace', index=False)
+conn.close()
