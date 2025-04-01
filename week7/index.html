@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    .books-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 10px;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin: 0 0 10px;
+    }
+    p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Bookstore</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="books-container" class="books-grid"></section>
+  </main>
+
+  <script>
+    // Function to fetch books from JSON file and populate the webpage
+    async function populateBooks() {
+      const requestURL = "books.json"; // Path to the JSON file
+      console.log('Starting to fetch JSON from:', requestURL);
+      try {
+        const response = await fetch(requestURL); // Fetch the JSON file
+        console.log('Fetch response status:', response.status);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`); // Throw error if fetch failed
+        }
+        const bookCollection = await response.json(); // Parse JSON data
+        console.log('Parsed JSON data:', bookCollection);
+        populateBooksList(bookCollection); // Populate the book list
+      } catch (error) {
+        console.error('There was a problem with the fetch operation:', error); // Log errors
+      }
+    }
+
+    // Function to populate the book list on the webpage
+    function populateBooksList(books) {
+      const section = document.querySelector("section"); // Get the section element
+      section.innerHTML = ''; // Clear existing content
+
+      books.forEach(book => { // Loop through each book
+        const myArticle = document.createElement("article"); // Create a new article element
+        const myH2 = document.createElement("h2"); // Create a new heading element
+        const myPara1 = document.createElement("p"); // Create a new paragraph element for author
+        const myPara2 = document.createElement("p"); // Create a new paragraph element for pages
+        const myPara3 = document.createElement("p"); // Create a new paragraph element for topics
+        const myList = document.createElement("ul"); // Create a new unordered list element
+
+        myH2.textContent = book.title; // Set the book title
+        myPara1.textContent = `Author: ${book.author}`; // Set the author name
+        myPara2.textContent = `Pages: ${book.pages}`; // Set the number of pages
+        myPara3.textContent = "Topics:"; // Label for topics
+
+        const topics = book.topics; // Get the topics array
+        topics.forEach(topic => { // Loop through each topic
+          const listItem = document.createElement("li"); // Create a new list item element
+          listItem.textContent = topic; // Set the topic text
+          myList.appendChild(listItem); // Append the list item to the list
+        });
+
+        myArticle.appendChild(myH2); // Append title to article
+        myArticle.appendChild(myPara1); // Append author to article
+        myArticle.appendChild(myPara2); // Append pages to article
+        myArticle.appendChild(myPara3); // Append topics label to article
+        myArticle.appendChild(myList); // Append topics list to article
+
+        section.appendChild(myArticle); // Append article to section
+      });
+    }
+
+    populateBooks(); // Call the function to start populating books
+  </script>
+</body>
+</html>
