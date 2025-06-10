@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Python Programming Basics",
+        "courseware": "Python syntax, data types, control structures, functions, and modules.",
+        "assessment": "Online quizzes, coding assignments, and a final project.",
+        "sampleProject": "Develop a command-line application that processes and analyzes data."
+    },
+    {
+        "name": "Web Development Fundamentals",
+        "courseware": "HTML5, CSS3, JavaScript, responsive design, and web accessibility.",
+        "assessment": "Practical website development tasks, code reviews, and a portfolio project.",
+        "sampleProject": "Build a responsive personal portfolio website with interactive elements."
+    },
+    {
+        "name": "Database Management Systems",
+        "courseware": "Relational database design, SQL, normalization, and database administration.",
+        "assessment": "Database design exercises, SQL query tasks, and a database implementation project.",
+        "sampleProject": "Design and implement a database for a small business or organization."
+    },
+    {
+        "name": "Network Security Essentials",
+        "courseware": "Network protocols, cybersecurity principles, ethical hacking, and security tools.",
+        "assessment": "Security lab exercises, penetration testing simulations, and case studies.",
+        "sampleProject": "Conduct a security assessment of a simulated network environment."
+    },
+    {
+        "name": "Data Science and Analytics",
+        "courseware": "Data visualization, machine learning basics, Python libraries (Pandas, NumPy, Scikit-learn).",
+        "assessment": "Data analysis projects, predictive modeling tasks, and presentation of findings.",
+        "sampleProject": "Analyze a real-world dataset and develop a machine learning model to predict outcomes."
+    }
+]

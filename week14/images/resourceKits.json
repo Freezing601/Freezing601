@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Python Programming Starter Kit",
+        "unitNumber": "ICTWEB426",
+        "description": "Comprehensive guide to Python programming for beginners.",
+        "price": "Free",
+        "image": "images/python-kit.jpg"
+    },
+    {
+        "name": "Web Development Toolkit",
+        "unitNumber": "ICTWEB427",
+        "description": "Essential resources for modern web development practices.",
+        "price": "Free",
+        "image": "441-Freezing/week14/images/web-dev-kit.jpg"
+    },
+    {
+        "name": "Database Design Handbook",
+        "unitNumber": "ICTWEB428",
+        "description": "Step-by-step guide to designing efficient relational databases.",
+        "price": "Free",
+        "image": "441-Freezing/week14/images/database-kit.jpg"
+    },
+    {
+        "name": "Network Security Toolbox",
+        "unitNumber": "ICTWEB429",
+        "description": "Tools and techniques for securing computer networks.",
+        "price": "Free",
+        "image": "441-Freezing/week14/images/security-kit.jpg"
+    },
+    {
+        "name": "Data Science Workbook",
+        "unitNumber": "ICTWEB430",
+        "description": "Practical exercises for learning data science and analytics.",
+        "price": "Free",
+        "image": "441-Freezing/week14/images/data-science-kit.jpg"
+    },
+    {
+        "name": "Software Development Lifecycle Guide",
+        "unitNumber": "ICTWEB431",
+        "description": "Overview of software development methodologies and best practices.",
+        "price": "Free",
+        "image": "441-Freezing/week14/images/sdlc-kit.jpg"
+    },
+    {
+        "name": "Cloud Computing Essentials",
+        "unitNumber": "ICTWEB432",
+        "description": "Introduction to cloud services and deployment models.",
+        "price": "Free",
+        "image": "441-Freezing/week14/images/cloud-kit.jpg"
+    },
+    {
+        "name": "Mobile App Development Guide",
+        "unitNumber": "ICTWEB433",
+        "description": "Getting started with mobile app development for Android and iOS.",
+        "price": "Free",
+        "image": "441-Freezing/week14/images/mobile-kit.jpg"
+    },
+    {
+        "name": "DevOps Practices Handbook",
+        "unitNumber": "ICTWEB434",
+        "description": "Implementing DevOps methodologies in software development.",
+        "price": "Free",
+        "image": "441-Freezing/week14/images/devops-kit.jpg"
+    },
+    {
+        "name": "Cybersecurity Case Studies",
+        "unitNumber": "ICTWEB435",
+        "description": "Real-world examples of cybersecurity incidents and solutions.",
+        "price": "Free",
+        "image": "441-Freezing/week14/images/cybersecurity-kit.jpg"
+    },
+    {
+        "name": "IT Project Management Guide",
+        "unitNumber": "ICTWEB436",
+        "description": "Project management principles and practices for IT projects.",
+        "price": "Free",
+        "image": "441-Freezing/week14/images/project-management-kit.jpg"
+    }
+]

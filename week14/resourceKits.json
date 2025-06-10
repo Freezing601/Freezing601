@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Python Programming Starter Kit",
+        "unitNumber": "ICTWEB426",
+        "description": "Comprehensive guide to Python programming for beginners.",
+        "price": "$19.99",
+        "image": "images/python-kit.jpg"
+    },
+    {
+        "name": "Web Development Toolkit",
+        "unitNumber": "ICTWEB427",
+        "description": "Essential resources for modern web development practices.",
+        "price": "$29.99",
+        "image": "images/web-dev-kit.jpg"
+    },
+    {
+        "name": "Database Design Handbook",
+        "unitNumber": "ICTWEB428",
+        "description": "Step-by-step guide to designing efficient relational databases.",
+        "price": "$39.99",
+        "image": "images/database-kit.jpg"
+    },
+    {
+        "name": "Network Security Toolbox",
+        "unitNumber": "ICTWEB429",
+        "description": "Tools and techniques for securing computer networks.",
+        "price": "$49.99",
+        "image": "images/security-kit.jpg"
+    },
+    {
+        "name": "Data Science Workbook",
+        "unitNumber": "ICTWEB430",
+        "description": "Practical exercises for learning data science and analytics.",
+        "price": "$59.99",
+        "image": "images/data-science-kit.jpg"
+    },
+    {
+        "name": "Software Development Lifecycle Guide",
+        "unitNumber": "ICTWEB431",
+        "description": "Overview of software development methodologies and best practices.",
+        "price": "$45.99",
+        "image": "images/sdlc-kit.jpg"
+    },
+    {
+        "name": "Cloud Computing Essentials",
+        "unitNumber": "ICTWEB432",
+        "description": "Introduction to cloud services and deployment models.",
+        "price": "$36.99",
+        "image": "images/cloud-kit.jpg"
+    },
+    {
+        "name": "Mobile App Development Guide",
+        "unitNumber": "ICTWEB433",
+        "description": "Getting started with mobile app development for Android and iOS.",
+        "price": "$15.99",
+        "image": "images/mobile-kit.jpg"
+    },
+    {
+        "name": "DevOps Practices Handbook",
+        "unitNumber": "ICTWEB434",
+        "description": "Implementing DevOps methodologies in software development.",
+        "price": "$27.99",
+        "image": "images/devops-kit.jpg"
+    },
+    {
+        "name": "Cybersecurity Case Studies",
+        "unitNumber": "ICTWEB435",
+        "description": "Real-world examples of cybersecurity incidents and solutions.",
+        "price": "$66.99",
+        "image": "images/cybersecurity-kit.jpg"
+    },
+    {
+        "name": "IT Project Management Guide",
+        "unitNumber": "ICTWEB436",
+        "description": "Project management principles and practices for IT projects.",
+        "price": "100$",
+        "image": "images/project-management-kit.jpg"
+    }
+]
